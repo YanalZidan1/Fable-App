@@ -26,14 +26,9 @@
   text-transform: uppercase;
 }
 
-.navbar-nav .nav-link:active {
-  color: #f8b400 !important;
-}
-
 .navbar-nav .nav-link:hover {
   color: #f8b400 !important;
 }
-
 .navbar-nav .btn-outline-primary {
   position: relative;
   color: #454545;
@@ -661,7 +656,8 @@
 
 .footer p {
   color: #ddd;
-  font-family: 'Roboto', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .btn-our {
@@ -811,9 +807,9 @@
 .HeaderAnyPage p {
   font-size: 16px;
   text-align: center;
-  letter-spacing: 2px !important;
+  letter-spacing: 1px !important;
   color: #f0f0f0;
-  font-family: serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .HeaderAnyPage p::before {
@@ -827,6 +823,113 @@
   margin-left: -25px;
 }
 
+.Menu_List h2{
+  color:#454545;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid #454545;
+}
+.Menu_List h2::after{
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #F2B410;
+  margin-top: 20px;
+  position: relative;
+  top: 2px; 
+}
+.Menu_List span{
+  color: #F2B410;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Menu_List h4{
+  color: #000;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+.Menu_List p{
+  color: #454545;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Form .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Form .container .img-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Form .container .img-form img{
+ width: 600px;
+ height: 600px;
+}
+.form-container-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-container-parent h3{
+  font-size: 80px;
+  text-align: center;
+  color: #F2B410;
+  font-family: 'Tangerine-Regular', sans-serif;
+}
+.form-container-parent h1{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+}
+.form-container-parent p{
+  font-size: 16px;
+  text-align: center;
+  color: #454545ac;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-container-parent form .form-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.form-container-parent form .form-group input{
+  padding: 9px 9px;
+  border: 1px solid #45454598 !important;
+  color: #45454598 !important;
+}
+.form-container-parent form .form-group input::placeholder{
+  color: #45454598 !important;
+}
+.form-group select{
+  padding: 9px 9px;
+  border: 1px solid #45454598 !important;
+  color: #45454598 !important;
+}
+.btn-Book{
+  width: 100%;
+  height: 50px;
+  background-color: #F2B410 !important;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 0 !important;
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-Book:hover{
+  background-color: #fff !important;
+  color: #F2B410 !important;
+  border: 1px solid #F2B410 !important;
+}
 /* Optional: Add media queries for better responsiveness on smaller screens */
 @media (max-width: 768px) {
   .footer {
