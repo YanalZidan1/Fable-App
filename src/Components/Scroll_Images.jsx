@@ -1,60 +1,43 @@
-import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import AOS from 'aos'; // استيراد AOS
-import 'aos/dist/aos.css'; // استيراد التنسيق الخاص بـ AOS
+import { EffectCoverflow, Navigation, Thumbs } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
 function Scroll_Images() {
-  // تهيئة AOS عند تحميل المكون
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // مدة التأثير
-      easing: 'ease-in-out', // نوع الحركة
-    });
-  }, []);
+  const images = [
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x400"
+  ];
 
   return (
     <div className="scroll-images container-fluid p-0">
       <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        loop={true}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView="auto"
         breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
-        navigation={true} // تفعيل خاصية التنقل
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 2500, disableOnInteraction: false }} 
-        className="mySwiper"
+        loop={true}
+        navigation={true}
+        modules={[EffectCoverflow, Navigation, Thumbs]}
+        className="main-swiper-imges"
       >
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 1" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 2" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 3" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 1" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 2" />
-        </SwiperSlide>
-        <SwiperSlide >
-          <img src="https://placehold.co/600x400" alt="Image 3" />
-        </SwiperSlide>
+        {images.map((img, index) => (
+          <SwiperSlide key={index} className="swiper-slide-imges">
+            <img src={img} alt={`Slide ${index + 1}`} className="slide-imag" style={{ width: "100%", height: "100%" }} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
-
   );
 }
 
