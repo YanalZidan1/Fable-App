@@ -8,6 +8,8 @@ import Footer from './Components/Footer';
 //pages
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Menu from './Pages/Menu';
+import Reservations from './Pages/Reservations';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/reservations" element={<Reservations />} />
       </Routes>
       <Footer/>
     </div>
