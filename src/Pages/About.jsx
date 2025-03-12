@@ -25,6 +25,19 @@ function About() {
                     ]}
                 />
                 <Scroll_Images />
+                <div style={{direction:'ltr' }}>
+                    <OurStory
+                        title="Discover"
+                        subtitle="Our Chefs"
+                        text="Curabitur quas nets lacus ets nulat iaculis loremis etis nisle varius vitae seditum fugiatum ligula aliquam qui sequi. Lorem ipsum dolor sit amet, consectetur adipiscing elit rutrum eleif arcu sit aspernatur nets fugit, sedit quiadused fuscentinusad sagittis odio magna, in ultricies ex tincidunt"
+                        images={[
+                            require("../assets/images/chef1.jpg"),
+                        ]}
+                        link={'#'}
+                        link_name={'OUR Chefs'}
+                        
+                    />
+                </div>
             </div>
         </div>
     )
