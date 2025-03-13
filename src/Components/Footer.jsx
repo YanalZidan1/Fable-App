@@ -79,7 +79,7 @@ function Footer() {
             <div className="container mt-5" >
                 <div className="col-md-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <div className="col-md-4 copyright text-center text-md-start">
-                        <p>© 2016-2018 Fable. Designed by Fable</p>
+                        <p>© 2016-2018 Fable. Designed by <a href='https://github.com/YanalZidan1' style={{textDecoration:'none' , color:"#fff"}}>YanalZidan</a></p>
                     </div>
                     <div className="col-md-4 scroll text-center">
                         <a href="#top" className="scroll-top">
