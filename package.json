@@ -11,7 +11,6 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.4.10",
-    "gh-pages": "^6.3.0",
     "jquery": "^3.7.1",
     "magnific-popup": "^1.2.0",
     "react": "^19.0.0",
@@ -24,6 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
