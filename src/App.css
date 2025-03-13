@@ -930,6 +930,36 @@
   color: #F2B410 !important;
   border: 1px solid #F2B410 !important;
 }
+.ContactForm h1{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #575757;
+}
+.ContactForm p{
+  font-size: 16px;
+  text-align: center;
+  color: #454545ac;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn-contact{
+   padding: 10px 60px !important;
+  background-color: #F2B410 !important;
+  color: #fff !important;
+  border: none !important;
+  font-size: 16px;
+  border-radius: 0 !important;
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-contact:hover{
+  background-color: transparent !important;
+  color: #F2B410 !important;
+  border: 1px solid #F2B410 !important;
+}
 /* Optional: Add media queries for better responsiveness on smaller screens */
 @media (max-width: 768px) {
   .footer {
