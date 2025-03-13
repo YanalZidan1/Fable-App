@@ -29,8 +29,8 @@ const Navbar = () => {
                             { path: "/About", label: "About us" },
                             { path: "/Menu", label: "Menu" },
                             { path: "/Reservations", label: "Reservations" },
-                            { path: "#", label: "Gallery" },
-                            { path: "#", label: "Contact" },
+                            { path: "/Gallary", label: "Gallery" },
+                            { path: "/Contact", label: "Contact" },
                         ].map(({ path, label }) => (
                             <li key={path} className="nav-item px-2">
                                 <a
