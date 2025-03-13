@@ -2,7 +2,7 @@
   "name": "fable-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/YanalZidan1/Fable-app.git",
+  "homepage": "https://yanalzidan1.github.io/Fable-app/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
