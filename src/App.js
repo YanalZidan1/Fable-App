@@ -10,6 +10,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Menu from './Pages/Menu';
 import Reservations from './Pages/Reservations';
+import Gallary from './Pages/Gallary';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservations" element={<Reservations />} />
+        <Route path="/gallary" element={<Gallary />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </div>
